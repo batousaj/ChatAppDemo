@@ -10,27 +10,32 @@ import UIKit
 
 extension WelcomeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-//        let xValue = targetContentOffset.pointee.x
-//        let pageNum = Int(xValue / view.frame.width)
-//        pageControl.currentPage = pageNum
-//        if pageNum != WelcomePage.shared.welcomeSection().count - 1 {
-//            skipBut.isHidden = false
-//        }else{
-////            goToSignInController()
-//            skipBut.isHidden = true
-//        }
-////        if pageControl.currentPage > 0 { slideAnimView.isHidden = true } else { slideAnimView.isHidden = false }
-//    }
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let xValue = targetContentOffset.pointee.x
+        let pageNum = Int(xValue / view.frame.width)
+        pageControl.currentPage = pageNum
+        if pageNum != WelcomePage.shared.welcomeSection().count - 1 {
+            skipBut.isHidden = false
+        }else{
+//            goToSignInController()
+            skipBut.isHidden = true
+        }
+//        if pageControl.currentPage > 0 { slideAnimView.isHidden = true } else { slideAnimView.isHidden = false }
+    }
     
 // MARK: - delegate of CollectionView
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
         
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        WelcomePage.shared.welcomeSection().count
+        return WelcomePage.shared.welcomeSection().count
     }
         
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "welcomeCell", for: indexPath) as! WelcomeCell
+        print("TV: \(indexPath.row)")
         let section = WelcomePage.shared.welcomeSection()
         cell.configured(section[indexPath.row])
         return cell
@@ -44,10 +49,10 @@ extension WelcomeViewController : UICollectionViewDelegate, UICollectionViewData
         let welcomeCell = cell as! WelcomeCell
         welcomeCell.sectionImage.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         welcomeCell.descriptionSection.transform = CGAffineTransform(translationX: view.frame.origin.x + view.frame.width/2, y: 0)
-//        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
             welcomeCell.sectionImage.transform = .identity
             welcomeCell.descriptionSection.transform = .identity
-//        })
+        })
     }
     
     

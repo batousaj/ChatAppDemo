@@ -23,11 +23,11 @@ class WelcomePage {
     
     private init() {
         section = [
-            WelcomeModel.init(imageName: "Logo-Light", title: "mChat", discription: "The messaging app."),
-            WelcomeModel.init(imageName: "Chat", title: "Chat", discription: "Contact your friends by sending them text, audio or media messages."),
-            WelcomeModel.init(imageName: "MapsHome", title: "Design", discription: "Make your messenger look the way you like it."),
-            WelcomeModel.init(imageName: "Design", title: "Maps", discription: "Share your location with your friends."),
-            WelcomeModel.init(imageName: "WelcomeEnd", title: "Start Messaging", discription: "Get started")
+            WelcomeModel(imageName: "Logo-Light", title: "mChat", discription: "The messaging app."),
+            WelcomeModel(imageName: "Chat", title: "Chat", discription: "Contact your friends by sending them text, audio or media messages."),
+            WelcomeModel(imageName: "MapsHome", title: "Maps", discription: "Share your location with your friends."),
+            WelcomeModel(imageName: "Design", title: "Design", discription: "Make your messenger look the way you like it."),
+            WelcomeModel(imageName: "WelcomeEnd", title: "Start Messaging", discription: "")
         ]
     }
     

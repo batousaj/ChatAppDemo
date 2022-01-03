@@ -17,9 +17,6 @@ class WelcomeCell : UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        contentView.addSubview(sectionLabel)
-        contentView.addSubview(sectionImage)
-        contentView.addSubview(descriptionSection)
     }
     
     override func prepareForReuse() {
@@ -44,10 +41,18 @@ class WelcomeCell : UICollectionViewCell {
         sectionImage.image = UIImage(named: section.imageName!)
         sectionLabel.text = section.title
         descriptionSection.text = section.discription
+        
+        print("TV: \(section.imageName!) - \(section.title) - \(section.discription)")
+        if section.title == "Start Messaging" {
+            sectionImage.removeFromSuperview()
+            sectionLabel.removeFromSuperview()
+            descriptionSection.removeFromSuperview()
+        }
     }
 
     
     private func setupSectionImage() {
+        contentView.addSubview(sectionImage)
         sectionImage.translatesAutoresizingMaskIntoConstraints = false
         sectionImage.contentMode = .scaleAspectFill
         sectionImage.layer.masksToBounds = true
@@ -63,6 +68,7 @@ class WelcomeCell : UICollectionViewCell {
     }
     
     private func setupSectionLabel() {
+        contentView.addSubview(sectionLabel)
         sectionLabel.translatesAutoresizingMaskIntoConstraints  = false
         sectionLabel.font = UIFont(name: "Alata", size: 28)
         sectionLabel.textAlignment = .center
@@ -74,6 +80,7 @@ class WelcomeCell : UICollectionViewCell {
     }
     
     private func setupDescriptionLabel() {
+        contentView.addSubview(descriptionSection)
         descriptionSection.translatesAutoresizingMaskIntoConstraints = false
         descriptionSection.textColor = .gray
         descriptionSection.textAlignment = .center
@@ -82,8 +89,8 @@ class WelcomeCell : UICollectionViewCell {
         let constraints = [
             descriptionSection.centerXAnchor.constraint(equalTo: centerXAnchor),
             descriptionSection.topAnchor.constraint(equalTo: sectionLabel.bottomAnchor, constant: 8),
-//            descriptionSection.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-//            descriptionSection.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
+            descriptionSection.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            descriptionSection.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
         ]
         NSLayoutConstraint.activate(constraints)
     }
