@@ -59,6 +59,8 @@ extension WelcomeViewController : UICollectionViewDelegate, UICollectionViewData
 // MARK: - Action OBJC target
             
     @objc func onClickSkip(_ sender:UIButton) {
-        
+        let tabbar = ChatTabbar()
+        tabbar.modalPresentationStyle = .fullScreen
+        self.present(tabbar, animated: true, completion: nil)
     }
 }

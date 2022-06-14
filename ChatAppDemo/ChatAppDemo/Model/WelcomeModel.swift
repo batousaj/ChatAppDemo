@@ -15,6 +15,12 @@ struct WelcomeModel {
     let discription:String?
 }
 
+enum TitleTabbar:String {
+    case Conversation = "Conversations"
+    case Contacts = "Contacts"
+    case Settings = "Settings"
+}
+
 
 class WelcomePage {
     
