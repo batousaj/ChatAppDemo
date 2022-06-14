@@ -16,6 +16,16 @@
 		2E9C455E27817CDD006A95EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9C455C27817CDD006A95EE /* Main.storyboard */; };
 		2E9C456027817CDE006A95EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9C455F27817CDE006A95EE /* Assets.xcassets */; };
 		2E9C456327817CDE006A95EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9C456127817CDE006A95EE /* LaunchScreen.storyboard */; };
+		2EC5F9FE2858BD02008ECDD9 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5F9FD2858BD02008ECDD9 /* SignInVC.swift */; };
+		2EC5FA002858BD24008ECDD9 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5F9FF2858BD24008ECDD9 /* LogInVC.swift */; };
+		2EC5FA022858BD3D008ECDD9 /* SelectAvartaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5FA012858BD3D008ECDD9 /* SelectAvartaImage.swift */; };
+		2EC5FA062858C555008ECDD9 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5FA052858C555008ECDD9 /* ContactsVC.swift */; };
+		2EC5FA092858C72D008ECDD9 /* ChatTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5FA082858C72D008ECDD9 /* ChatTabbar.swift */; };
+		2EC5FA0B2858CAC4008ECDD9 /* ConverstionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5FA0A2858CAC4008ECDD9 /* ConverstionVC.swift */; };
+		2EC5FA0D2858CB4C008ECDD9 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC5FA0C2858CB4C008ECDD9 /* SettingsVC.swift */; };
+		2EC5FA0F2858CC24008ECDD9 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5FA0E2858CC24008ECDD9 /* SettingView.storyboard */; };
+		2EC5FA112858CC40008ECDD9 /* ContactsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5FA102858CC40008ECDD9 /* ContactsView.storyboard */; };
+		2EC5FA132858CC56008ECDD9 /* ConversationsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5FA122858CC56008ECDD9 /* ConversationsView.storyboard */; };
 		E856C35A469F17A92783EF82 /* Pods_ChatAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D21554EDD65B0CEF74DFDD8 /* Pods_ChatAppDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +42,16 @@
 		2E9C455F27817CDE006A95EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E9C456227817CDE006A95EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E9C456427817CDE006A95EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC5F9FD2858BD02008ECDD9 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		2EC5F9FF2858BD24008ECDD9 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		2EC5FA012858BD3D008ECDD9 /* SelectAvartaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAvartaImage.swift; sourceTree = "<group>"; };
+		2EC5FA052858C555008ECDD9 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		2EC5FA082858C72D008ECDD9 /* ChatTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabbar.swift; sourceTree = "<group>"; };
+		2EC5FA0A2858CAC4008ECDD9 /* ConverstionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverstionVC.swift; sourceTree = "<group>"; };
+		2EC5FA0C2858CB4C008ECDD9 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		2EC5FA0E2858CC24008ECDD9 /* SettingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingView.storyboard; sourceTree = "<group>"; };
+		2EC5FA102858CC40008ECDD9 /* ContactsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactsView.storyboard; sourceTree = "<group>"; };
+		2EC5FA122858CC56008ECDD9 /* ConversationsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConversationsView.storyboard; sourceTree = "<group>"; };
 		9D21554EDD65B0CEF74DFDD8 /* Pods_ChatAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6831C5567864EB289AC2958 /* Pods-ChatAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppDemo.release.xcconfig"; path = "Target Support Files/Pods-ChatAppDemo/Pods-ChatAppDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +74,6 @@
 				0A074D990D726672E843F126 /* Pods-ChatAppDemo.debug.xcconfig */,
 				C6831C5567864EB289AC2958 /* Pods-ChatAppDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -94,6 +113,8 @@
 		2E9C456A27819F62006A95EE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2EC5FA072858C6BE008ECDD9 /* ChatTabbar */,
+				2EC5F9FC2858B94B008ECDD9 /* AuthViewController */,
 				2E9C45792781A07E006A95EE /* Conversation */,
 				2E9C45782781A072006A95EE /* ChatView */,
 				2E9C45772781A06B006A95EE /* Contacts */,
@@ -153,6 +174,8 @@
 		2E9C45752781A042006A95EE /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				2EC5FA0C2858CB4C008ECDD9 /* SettingsVC.swift */,
+				2EC5FA0E2858CC24008ECDD9 /* SettingView.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -171,6 +194,8 @@
 		2E9C45772781A06B006A95EE /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				2EC5FA052858C555008ECDD9 /* ContactsVC.swift */,
+				2EC5FA102858CC40008ECDD9 /* ContactsView.storyboard */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -185,8 +210,28 @@
 		2E9C45792781A07E006A95EE /* Conversation */ = {
 			isa = PBXGroup;
 			children = (
+				2EC5FA0A2858CAC4008ECDD9 /* ConverstionVC.swift */,
+				2EC5FA122858CC56008ECDD9 /* ConversationsView.storyboard */,
 			);
 			path = Conversation;
+			sourceTree = "<group>";
+		};
+		2EC5F9FC2858B94B008ECDD9 /* AuthViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2EC5F9FD2858BD02008ECDD9 /* SignInVC.swift */,
+				2EC5F9FF2858BD24008ECDD9 /* LogInVC.swift */,
+				2EC5FA012858BD3D008ECDD9 /* SelectAvartaImage.swift */,
+			);
+			path = AuthViewController;
+			sourceTree = "<group>";
+		};
+		2EC5FA072858C6BE008ECDD9 /* ChatTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				2EC5FA082858C72D008ECDD9 /* ChatTabbar.swift */,
+			);
+			path = ChatTabbar;
 			sourceTree = "<group>";
 		};
 		EB6DD474800C1DEECAA2EF0E /* Frameworks */ = {
@@ -259,6 +304,9 @@
 			files = (
 				2E9C456327817CDE006A95EE /* LaunchScreen.storyboard in Resources */,
 				2E9C456027817CDE006A95EE /* Assets.xcassets in Resources */,
+				2EC5FA112858CC40008ECDD9 /* ContactsView.storyboard in Resources */,
+				2EC5FA0F2858CC24008ECDD9 /* SettingView.storyboard in Resources */,
+				2EC5FA132858CC56008ECDD9 /* ConversationsView.storyboard in Resources */,
 				2E9C455E27817CDD006A95EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,12 +360,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC5FA0D2858CB4C008ECDD9 /* SettingsVC.swift in Sources */,
 				2E79AEE42782DD890000A0FC /* WelcomeCell.swift in Sources */,
+				2EC5FA0B2858CAC4008ECDD9 /* ConverstionVC.swift in Sources */,
 				2E9C455B27817CDD006A95EE /* WelcomeViewController.swift in Sources */,
+				2EC5FA002858BD24008ECDD9 /* LogInVC.swift in Sources */,
+				2EC5FA022858BD3D008ECDD9 /* SelectAvartaImage.swift in Sources */,
 				2E9C455727817CDD006A95EE /* AppDelegate.swift in Sources */,
+				2EC5FA092858C72D008ECDD9 /* ChatTabbar.swift in Sources */,
 				2E79AEE02782CC950000A0FC /* WelcomeModel.swift in Sources */,
+				2EC5F9FE2858BD02008ECDD9 /* SignInVC.swift in Sources */,
 				2E9C455927817CDD006A95EE /* SceneDelegate.swift in Sources */,
 				2E79AEE22782DBE50000A0FC /* WelcomeVC + Extension.swift in Sources */,
+				2EC5FA062858C555008ECDD9 /* ContactsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8L589BGVFH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatAppDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -495,6 +551,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8L589BGVFH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChatAppDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
