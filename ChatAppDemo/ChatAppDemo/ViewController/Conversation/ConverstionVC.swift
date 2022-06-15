@@ -13,6 +13,7 @@ class ConversationVC : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Conversations"
+        self.setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -21,6 +22,24 @@ class ConversationVC : UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    private func setupUI() {
+        self.view.backgroundColor = .white
+        self.setupNavigatorBar()
+    }
+    
+    private func setupNavigatorBar() {
+        //left bar
+//        self.navigationItem.rightBarButtonItem?.image =
+        
+        //right bar
+        guard let image = UIImage(systemName: "square.and.pencil") else {
+            return
+        }
+        let barItems = UIBarButtonItem(image: image, style: .done, target: self, action: #selector(onClickNewConvers))
+        barItems.tintColor = .black
+        self.navigationItem.rightBarButtonItem = barItems
     }
     
 }

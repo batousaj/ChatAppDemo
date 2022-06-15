@@ -26,6 +26,8 @@
 		2EC5FA0F2858CC24008ECDD9 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5FA0E2858CC24008ECDD9 /* SettingView.storyboard */; };
 		2EC5FA112858CC40008ECDD9 /* ContactsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5FA102858CC40008ECDD9 /* ContactsView.storyboard */; };
 		2EC5FA132858CC56008ECDD9 /* ConversationsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC5FA122858CC56008ECDD9 /* ConversationsView.storyboard */; };
+		2EE06C83285A20C300819A43 /* ContactsVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE06C82285A20C300819A43 /* ContactsVC+Ext.swift */; };
+		2EE06C85285A23E200819A43 /* ConversationVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE06C84285A23E200819A43 /* ConversationVC+Ext.swift */; };
 		E856C35A469F17A92783EF82 /* Pods_ChatAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D21554EDD65B0CEF74DFDD8 /* Pods_ChatAppDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		2EC5FA0E2858CC24008ECDD9 /* SettingView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingView.storyboard; sourceTree = "<group>"; };
 		2EC5FA102858CC40008ECDD9 /* ContactsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactsView.storyboard; sourceTree = "<group>"; };
 		2EC5FA122858CC56008ECDD9 /* ConversationsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConversationsView.storyboard; sourceTree = "<group>"; };
+		2EE06C82285A20C300819A43 /* ContactsVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsVC+Ext.swift"; sourceTree = "<group>"; };
+		2EE06C84285A23E200819A43 /* ConversationVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationVC+Ext.swift"; sourceTree = "<group>"; };
 		9D21554EDD65B0CEF74DFDD8 /* Pods_ChatAppDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatAppDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6831C5567864EB289AC2958 /* Pods-ChatAppDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppDemo.release.xcconfig"; path = "Target Support Files/Pods-ChatAppDemo/Pods-ChatAppDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC5FA052858C555008ECDD9 /* ContactsVC.swift */,
+				2EE06C82285A20C300819A43 /* ContactsVC+Ext.swift */,
 				2EC5FA102858CC40008ECDD9 /* ContactsView.storyboard */,
 			);
 			path = Contacts;
@@ -211,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC5FA0A2858CAC4008ECDD9 /* ConverstionVC.swift */,
+				2EE06C84285A23E200819A43 /* ConversationVC+Ext.swift */,
 				2EC5FA122858CC56008ECDD9 /* ConversationsView.storyboard */,
 			);
 			path = Conversation;
@@ -361,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC5FA0D2858CB4C008ECDD9 /* SettingsVC.swift in Sources */,
+				2EE06C85285A23E200819A43 /* ConversationVC+Ext.swift in Sources */,
 				2E79AEE42782DD890000A0FC /* WelcomeCell.swift in Sources */,
 				2EC5FA0B2858CAC4008ECDD9 /* ConverstionVC.swift in Sources */,
 				2E9C455B27817CDD006A95EE /* WelcomeViewController.swift in Sources */,
@@ -369,6 +376,7 @@
 				2E9C455727817CDD006A95EE /* AppDelegate.swift in Sources */,
 				2EC5FA092858C72D008ECDD9 /* ChatTabbar.swift in Sources */,
 				2E79AEE02782CC950000A0FC /* WelcomeModel.swift in Sources */,
+				2EE06C83285A20C300819A43 /* ContactsVC+Ext.swift in Sources */,
 				2EC5F9FE2858BD02008ECDD9 /* SignInVC.swift in Sources */,
 				2E9C455927817CDD006A95EE /* SceneDelegate.swift in Sources */,
 				2E79AEE22782DBE50000A0FC /* WelcomeVC + Extension.swift in Sources */,
